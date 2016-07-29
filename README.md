@@ -6,7 +6,8 @@ Admin template made with :heart:
 Angular 2, Bootstrap 4, Webpack and lots of awesome modules and plugins
 
 ## Installation guide
-npm install
+npm install 
+
 npm run prebuild:prod && npm run build:prod && npm run server:prod
 
 ##License
