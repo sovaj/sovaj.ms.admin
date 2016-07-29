@@ -35,16 +35,21 @@ git clone https://github.com/akveo/ng2-admin.git
 After repository is cloned, go inside of the repository directory and install dependencies:
 
 cd ng2-admin
+
 npm install
+
 This will setup a working copy of ng2-admin on your local machine.
 
 Note: If you have any issues after the installation, additionally run the following:
 
 bower install
+
 Running local copy
+
 To run a local copy in development mode, execute:
 
 npm start
+
 Go to http://0.0.0.0:3000 or http://localhost:3000 in your browser.
 
 To run the local copy in production mode and build the sources, execute:
