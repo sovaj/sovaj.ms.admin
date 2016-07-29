@@ -20,6 +20,7 @@
     "animate.css": "^3.5.1",
     "bootstrap": "4.0.0-alpha.2",
     "bootstrap-loader": "^1.0.10",
+    "bootstrap-sass": "^3.3.7",
     "chart.js": "^1.1.1",
     "chartist": "^0.9.7",
     "ckeditor": "^4.5.9",
