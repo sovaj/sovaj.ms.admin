@@ -16,45 +16,58 @@ Note: Make sure you have Node version >= 4.0 and NPM >= 3
 Once you have those, you should install these globals with npm install --global:
 
 ###webpack
-
+```shell
 npm install --global webpack
+```
 ###webpack-dev-server
-
+```shell
 npm install --global webpack-dev-server
+```
 ###typescript
-
+```shell
 npm install --global typescript@beta
+```
 ###bower
-
+```shell
 npm install --global bower
+```
 
 ##Clone repository and install dependencies
 You will need to clone the source code of ng2-admin GitHub repository:
 
-git clone https://github.com/akveo/ng2-admin.git
+```shell
+git clone https://github.com/sovaj/sovaj.ms.admin.git
+```
 After repository is cloned, go inside of the repository directory and install dependencies:
 
-cd ng2-admin
-
+```shell
+cd sovaj.ms.admin
 npm install
+```
 
 This will setup a working copy of ng2-admin on your local machine.
 
 Note: If you have any issues after the installation, additionally run the following:
 
+```shell
 bower install
+```
 
 Running local copy
 
 To run a local copy in development mode, execute:
 
+```shell
 npm start
+```
 
 Go to http://0.0.0.0:3000 or http://localhost:3000 in your browser.
 
 To run the local copy in production mode and build the sources, execute:
 
+```shell
 npm run prebuild:prod && npm run build:prod && npm run server:prod
+```
 
 ##License
 [MIT](LICENSE.txt) license.
