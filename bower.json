@@ -1,9 +1,9 @@
 {
-  "name": "sovaj.ms.admin",
+  "name": "ng2-admin",
   "version": "0.4.2",
   "description": "Angular 2 and Bootstrap 4 Admin Template.",
   "author": "akveo",
-  "homepage": "http://sovaj.org/",
+  "homepage": "http://akveo.github.io/ng2-admin/",
   "license": "MIT",
   "moduleType": [
     "es6"
