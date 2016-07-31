@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sovaj/sovaj.ms.admin.svg?branch=master)](https://travis-ci.org/sovaj/sovaj.ms.admin)
+
 # Admin panel framework based on Angular 2, Bootstrap 4 and Webpack
 
 Admin template made with :heart:
@@ -33,7 +35,7 @@ npm install --global bower
 ```
 
 ##Clone repository and install dependencies
-You will need to clone the source code of ng2-admin GitHub repository:
+You will need to clone the source code of sovaj.ms.admin GitHub repository:
 
 ```shell
 git clone https://github.com/sovaj/sovaj.ms.admin.git
@@ -45,7 +47,7 @@ cd sovaj.ms.admin
 npm install
 ```
 
-This will setup a working copy of ng2-admin on your local machine.
+This will setup a working copy of sovaj.ms.admin on your local machine.
 
 Note: If you have any issues after the installation, additionally run the following:
 
@@ -72,3 +74,7 @@ npm run prebuild:prod && npm run build:prod && npm run server:prod
 ##License
 [MIT](LICENSE.txt) license.
 
+### From akveo
+
+Enjoy :metal:
+We're always happy to hear your feedback!

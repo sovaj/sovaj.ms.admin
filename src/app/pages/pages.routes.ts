@@ -18,8 +18,7 @@ import {GoogleMaps} from './maps/components/googleMaps/googleMaps.component';
 import {LeafletMaps} from './maps/components/leafletMaps/leafletMaps.component';
 import {BubbleMaps} from './maps/components/bubbleMaps/bubbleMaps.component';
 import {LineMaps} from './maps/components/lineMaps/lineMaps.component';
-import {Editors} from './editors/editors.component';
-import {Ckeditor} from './editors/components/ckeditor/ckeditor.component';
+import {Documentation} from './documentation/documentation.component';
 import {Components} from './components/components.component';
 import {TreeView} from './components/components/treeView/treeView.component';
 
@@ -43,28 +42,17 @@ export const PagesRoutes:RouterConfig = [
         }
       },
       {
-        path: 'editors',
-        component: Editors,
+        path: 'documentation',
+        component: Documentation,
         data: {
           menu: {
-            title: 'Editors',
+            title: 'Documentation',
             icon: 'ion-edit',
             selected: false,
             expanded: false,
-            order: 100,
+            order: 100
           }
-        },
-        children: [
-          {
-            path: 'ckeditor',
-            component: Ckeditor,
-            data: {
-              menu: {
-                title: 'CKEditor',
-              }
-            }
-          }
-        ]
+        }
       },
       {
         path: 'components',
