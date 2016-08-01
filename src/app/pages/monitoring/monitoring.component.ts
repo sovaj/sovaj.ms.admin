@@ -1,14 +1,14 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'documentation',
+  selector: 'monitoring',
   pipes: [],
   directives: [],
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./documentation.scss')],
-  template: require('./documentation.html')
+  styles: [require('./monitoring.scss')],
+  template: require('./monitoring.html')
 })
-export class Documentation {
+export class Monitoring {
 
   constructor() {
   }

@@ -1,26 +1,13 @@
 import {RouterConfig} from '@angular/router';
-import {Dashboard} from './dashboard/dashboard.component';
-import {Charts} from './charts/charts.component';
-import {ChartistJs} from './charts/components/chartistJs/chartistJs.component';
+import {Home} from './home/home.component';
 import {Pages} from './pages.component';
-import {Ui} from './ui/ui.component';
-import {Typography} from './ui/components/typography/typography.component';
-import {Buttons} from './ui/components/buttons/buttons.component';
-import {Icons} from './ui/components/incons/icons.component';
-import {Grid} from './ui/components/grid/grid.component';
-import {Forms} from './forms/forms.component';
-import {Inputs} from './forms/components/inputs/inputs.component';
-import {Layouts} from './forms/components/layouts/layouts.component';
-import {BasicTables} from './tables/components/basicTables/basicTables.component';
-import {Tables} from './tables/tables.component';
-import {Maps} from './maps/maps.component';
-import {GoogleMaps} from './maps/components/googleMaps/googleMaps.component';
-import {LeafletMaps} from './maps/components/leafletMaps/leafletMaps.component';
-import {BubbleMaps} from './maps/components/bubbleMaps/bubbleMaps.component';
-import {LineMaps} from './maps/components/lineMaps/lineMaps.component';
+import {Configuration} from './configuration/configuration.component';
+import {Services} from './configuration/components/services/services.component';
+import {Users} from './configuration/components/users/users.component';
 import {Documentation} from './documentation/documentation.component';
+import {Monitoring} from './monitoring/monitoring.component';
+import {Logs} from './logs/logs.component';
 import {Components} from './components/components.component';
-import {TreeView} from './components/components/treeView/treeView.component';
 
 //noinspection TypeScriptValidateTypes
 export const PagesRoutes:RouterConfig = [
@@ -29,11 +16,11 @@ export const PagesRoutes:RouterConfig = [
     component: Pages,
     children: [
       {
-        path: 'dashboard',
-        component: Dashboard,
+        path: 'home',
+        component: Home,
         data: {
           menu: {
-            title: 'Dashboard',
+            title: 'Home',
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
@@ -55,168 +42,38 @@ export const PagesRoutes:RouterConfig = [
         }
       },
       {
-        path: 'components',
-        component: Components,
+        path: 'logs',
+        component: Logs,
         data: {
           menu: {
-            title: 'Components',
-            icon: 'ion-gear-a',
+            title: 'Logs',
+            icon: 'ion-navicon',
             selected: false,
             expanded: false,
-            order: 250,
+            order: 200
           }
-        },
-        children: [
-          {
-            path: 'treeview',
-            component: TreeView,
-            data: {
-              menu: {
-                title: 'Tree View',
-              }
-            }
-          }
-        ]
+        }
       },
       {
-        path: 'charts',
-        component: Charts,
+        path: 'monitoring',
+        component: Monitoring,
         data: {
           menu: {
-            title: 'Charts',
-            icon: 'ion-stats-bars',
+            title: 'Monitoring',
+            icon: 'ion-monitor',
             selected: false,
             expanded: false,
-            order: 200,
+            order: 300
           }
-        },
-        children: [
-          {
-            path: 'chartist-js',
-            component: ChartistJs,
-            data: {
-              menu: {
-                title: 'Chartist.Js',
-              }
-            }
-          }
-        ]
+        }
       },
       {
-        path: 'ui',
-        component: Ui,
+       path: 'configuration',
+        component: Configuration,
         data: {
           menu: {
-            title: 'UI Features',
-            icon: 'ion-android-laptop',
-            selected: false,
-            expanded: false,
-            order: 300,
-          }
-        },
-        children: [
-          {
-            path: 'typography',
-            component: Typography,
-            data: {
-              menu: {
-                title: 'Typography',
-              }
-            }
-          },
-          {
-            path: 'buttons',
-            component: Buttons,
-            data: {
-              menu: {
-                title: 'Buttons',
-              }
-            }
-          },
-          {
-            path: 'icons',
-            component: Icons,
-            data: {
-              menu: {
-                title: 'Icons',
-              }
-            }
-          },
-          {
-            path: 'grid',
-            component: Grid,
-            data: {
-              menu: {
-                title: 'Grid',
-              }
-            }
-          },
-        ]
-      },
-      {
-        path: 'forms',
-        component: Forms,
-        data: {
-          menu: {
-            title: 'Form Elements',
-            icon: 'ion-compose',
-            selected: false,
-            expanded: false,
-            order: 400,
-          }
-        },
-        children: [
-          {
-            path: 'inputs',
-            component: Inputs,
-            data: {
-              menu: {
-                title: 'Form Inputs',
-              }
-            }
-          },
-          {
-            path: 'layouts',
-            component: Layouts,
-            data: {
-              menu: {
-                title: 'Form Layouts',
-              }
-            }
-          }
-        ]
-      },
-      {
-        path: 'tables',
-        component: Tables,
-        data: {
-          menu: {
-            title: 'Tables',
-            icon: 'ion-grid',
-            selected: false,
-            expanded: false,
-            order: 500,
-          }
-        },
-        children: [
-          {
-            path: 'basictables',
-            component: BasicTables,
-            data: {
-              menu: {
-                title: 'Basic Tables',
-              }
-            }
-          }
-        ]
-      },
-      {
-        path: 'maps',
-        component: Maps,
-        data: {
-          menu: {
-            title: 'Maps',
-            icon: 'ion-ios-location-outline',
+            title: 'Configuration',
+            icon: 'ion-wrench',
             selected: false,
             expanded: false,
             order: 600,
@@ -224,38 +81,20 @@ export const PagesRoutes:RouterConfig = [
         },
         children: [
           {
-            path: 'googlemaps',
-            component: GoogleMaps,
+            path: 'services',
+            component: Services,
             data: {
               menu: {
-                title: 'Google Maps',
+                title: 'Services',
               }
             }
           },
           {
-            path: 'leafletmaps',
-            component: LeafletMaps,
+            path: 'user',
+            component: Users,
             data: {
               menu: {
-                title: 'Leaflet Maps',
-              }
-            }
-          },
-          {
-            path: 'bubblemaps',
-            component: BubbleMaps,
-            data: {
-              menu: {
-                title: 'Bubble Maps',
-              }
-            }
-          },
-          {
-            path: 'linemaps',
-            component: LineMaps,
-            data: {
-              menu: {
-                title: 'Line Maps',
+                title: 'Users',
               }
             }
           }
@@ -265,86 +104,10 @@ export const PagesRoutes:RouterConfig = [
         path: '',
         data: {
           menu: {
-            title: 'Pages',
-            icon: 'ion-document',
-            selected: false,
-            expanded: false,
-            order: 650,
-          }
-        },
-        children: [
-          {
-            path: '',
-            data: {
-              menu: {
-                title: 'Login',
-                url: '#/login'
-              }
-            }
-          },
-          {
-            path: '',
-            data: {
-              menu: {
-                title: 'Register',
-                url: '#/register'
-              }
-            }
-          }
-        ]
-      },
-      {
-        path: '',
-        data: {
-          menu: {
-            title: 'Menu Level 1',
-            icon: 'ion-ios-more',
-            selected: false,
-            expanded: false,
-            order: 700,
-          }
-        },
-        children: [
-          {
-            path: '',
-            data: {
-              menu: {
-                title: 'Menu Level 1.1',
-                url: '#'
-              }
-            }
-          },
-          {
-            path: '',
-            data: {
-              menu: {
-                title: 'Menu Level 1.2',
-                url: '#'
-              }
-            },
-            children: [
-              {
-                path: '',
-                data: {
-                  menu: {
-                    title: 'Menu Level 1.2.1',
-                    url: '#'
-                  }
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        path: '',
-        data: {
-          menu: {
-            title: 'External Link',
-            url: 'http://akveo.com',
-            icon: 'ion-android-exit',
-            order: 800,
-            target: '_blank'
+            title: 'Logout',
+            url: '#/login',
+            icon: 'ion-power',
+            order: 500,
           }
         }
       }
