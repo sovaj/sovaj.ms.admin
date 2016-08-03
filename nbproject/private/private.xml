@@ -3,7 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="MDU :: rms-parent pom">
-            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/pages.routes.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/home/home.component.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/node_modules/bootstrap/dist/css/bootstrap.css</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/main.browser.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/forms/components/inputs/components/checkboxInputs/index.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/home/home.html</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/home/home.scss</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/forms/components/inputs/components/checkboxInputs/checkboxInputs.component.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/home/responsiveTable/responsiveTable.component.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/theme/components/baMultiCheckbox/baMultiCheckbox.component.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/home/index.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/home/responsiveTable/responsiveTable.html</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/index.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/theme/components/baCheckbox/baCheckbox.component.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/src/app/pages/forms/components/inputs/inputs.component.ts</file>
+            <file>file:/C:/Users/mickael/Documents/NetBeansProjects/sovaj.ms.admin/package.json</file>
         </group>
     </open-files>
 </project-private>
