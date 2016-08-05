@@ -7,7 +7,7 @@ export class BaScrollPosition {
 
   @Input() public maxHeight:number;
   @Output() public scrollChange:EventEmitter<boolean> = new EventEmitter<boolean>();
-
+BaScrollPosition
   private _isScrolled:boolean;
 
   public ngOnInit():void {
